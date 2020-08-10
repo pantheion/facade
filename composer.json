@@ -13,5 +13,9 @@
         }
     },
     "minimum-stability": "dev",
-    "require": {}
+    "prefer-stable": true,
+    "require": {
+        "pantheion/helpers": "dev-master",
+        "pantheion/utils": "dev-master"
+    }
 }
