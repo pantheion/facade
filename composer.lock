@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b20a20bb4810cee310dd30b5d8dbff80",
+    "content-hash": "623993ae8373a04af91ba735c9ee2db9",
     "packages": [
         {
             "name": "graham-campbell/result-type",
@@ -184,16 +184,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pantheion/engine.git",
-                "reference": "eddc2197df2f90a673780075e40a88285e6e9aba"
+                "reference": "d13bad26943011a8d8c315add202ddb1215bcca2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pantheion/engine/zipball/eddc2197df2f90a673780075e40a88285e6e9aba",
-                "reference": "eddc2197df2f90a673780075e40a88285e6e9aba",
+                "url": "https://api.github.com/repos/pantheion/engine/zipball/d13bad26943011a8d8c315add202ddb1215bcca2",
+                "reference": "d13bad26943011a8d8c315add202ddb1215bcca2",
                 "shasum": ""
             },
             "require": {
                 "hassankhan/config": "dev-master",
+                "pantheion/routing": "dev-master",
                 "vlucas/phpdotenv": "^5.1@dev"
             },
             "type": "library",
@@ -210,7 +211,37 @@
                 }
             ],
             "description": "Engine base",
-            "time": "2020-08-10T11:22:56+00:00"
+            "time": "2020-08-14T19:26:34+00:00"
+        },
+        {
+            "name": "pantheion/filesystem",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pantheion/filesystem.git",
+                "reference": "e7a212ede0c773656b5aa05bb899a7e7e79d92ed"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pantheion/filesystem/zipball/e7a212ede0c773656b5aa05bb899a7e7e79d92ed",
+                "reference": "e7a212ede0c773656b5aa05bb899a7e7e79d92ed",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Pantheion\\Filesystem\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Pedro Miguel",
+                    "email": "pedro.aos19@gmail.com"
+                }
+            ],
+            "description": "Filesystem",
+            "time": "2020-07-26T16:04:37+00:00"
         },
         {
             "name": "pantheion/helpers",
@@ -244,6 +275,72 @@
             ],
             "description": "Helpers",
             "time": "2020-08-09T11:02:06+00:00"
+        },
+        {
+            "name": "pantheion/http",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pantheion/http.git",
+                "reference": "6ff4028dc79a39c06a5db1d062194f50730029be"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pantheion/http/zipball/6ff4028dc79a39c06a5db1d062194f50730029be",
+                "reference": "6ff4028dc79a39c06a5db1d062194f50730029be",
+                "shasum": ""
+            },
+            "require": {
+                "pantheion/filesystem": "dev-master"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Pantheion\\Http\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Pedro Miguel",
+                    "email": "pedro.aos19@gmail.com"
+                }
+            ],
+            "description": "HTTP layer",
+            "time": "2020-07-28T15:34:27+00:00"
+        },
+        {
+            "name": "pantheion/routing",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pantheion/routing.git",
+                "reference": "c6c49b1a2aac552f6ecc82f7901d041b342c2206"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pantheion/routing/zipball/c6c49b1a2aac552f6ecc82f7901d041b342c2206",
+                "reference": "c6c49b1a2aac552f6ecc82f7901d041b342c2206",
+                "shasum": ""
+            },
+            "require": {
+                "pantheion/facade": "dev-master",
+                "pantheion/http": "dev-master"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Pantheion\\Routing\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Pedro Miguel",
+                    "email": "pedro.aos19@gmail.com"
+                }
+            ],
+            "time": "2020-08-14T17:55:13+00:00"
         },
         {
             "name": "pantheion/utils",
@@ -791,7 +888,8 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "pantheion/helpers": 20,
-        "pantheion/utils": 20
+        "pantheion/utils": 20,
+        "pantheion/routing": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

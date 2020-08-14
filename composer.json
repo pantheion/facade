@@ -16,6 +16,7 @@
     "prefer-stable": true,
     "require": {
         "pantheion/helpers": "dev-master",
-        "pantheion/utils": "dev-master"
+        "pantheion/utils": "dev-master",
+        "pantheion/routing": "dev-master"
     }
 }
