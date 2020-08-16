@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "623993ae8373a04af91ba735c9ee2db9",
+    "content-hash": "d7457ff170c4414d8f17fe5300c2e2b2",
     "packages": [
         {
             "name": "graham-campbell/result-type",
@@ -308,6 +308,40 @@
             ],
             "description": "HTTP layer",
             "time": "2020-07-28T15:34:27+00:00"
+        },
+        {
+            "name": "pantheion/middleware",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pantheion/middleware.git",
+                "reference": "fb792aee05f4660d0cf1b07a8c24a71b0a69bf9e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pantheion/middleware/zipball/fb792aee05f4660d0cf1b07a8c24a71b0a69bf9e",
+                "reference": "fb792aee05f4660d0cf1b07a8c24a71b0a69bf9e",
+                "shasum": ""
+            },
+            "require": {
+                "pantheion/http": "dev-master",
+                "pantheion/routing": "dev-master"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Pantheion\\Middleware\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Pedro Miguel",
+                    "email": "pedro.aos19@gmail.com"
+                }
+            ],
+            "description": "Middleware",
+            "time": "2020-08-16T15:38:15+00:00"
         },
         {
             "name": "pantheion/routing",
@@ -889,7 +923,8 @@
     "stability-flags": {
         "pantheion/helpers": 20,
         "pantheion/utils": 20,
-        "pantheion/routing": 20
+        "pantheion/routing": 20,
+        "pantheion/middleware": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
