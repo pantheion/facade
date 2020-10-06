@@ -10,7 +10,7 @@ use Pantheion\Database\Table\Manager as ManagerRootClass;
  * @method static \Pantheion\Database\Table\Table use(string $table)
  * @method static \Pantheion\Database\Table\Table[] all(bool $pivots, array $except)
  * @method static void drop(string $table)
- * 
+ * @method static \Pantheion\Database\Query\Builder query(string $table)
  */
 class Table extends Facade
 {
