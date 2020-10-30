@@ -20,6 +20,7 @@
         "pantheion/routing": "dev-master",
         "pantheion/middleware": "dev-master",
         "pantheion/database": "dev-master",
-        "pantheion/session": "dev-master"
+        "pantheion/session": "dev-master",
+        "pantheion/logging": "dev-master"
     }
 }
