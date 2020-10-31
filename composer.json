@@ -21,6 +21,7 @@
         "pantheion/middleware": "dev-master",
         "pantheion/database": "dev-master",
         "pantheion/session": "dev-master",
-        "pantheion/logging": "dev-master"
+        "pantheion/logging": "dev-master",
+        "pantheion/hashing": "dev-master"
     }
 }

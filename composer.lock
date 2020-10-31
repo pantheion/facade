@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ec0746e898066cd6b9db16b9808d3a14",
+    "content-hash": "c8632c1e657c7844a55ee405776ccd15",
     "packages": [
         {
             "name": "composer/package-versions-deprecated",
@@ -1016,17 +1016,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pantheion/engine.git",
-                "reference": "53363bdb943089a759363d73f609320da93d8332"
+                "reference": "f7b4adef8ef8a62f994ac85f78e506c3fb19cbd8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pantheion/engine/zipball/53363bdb943089a759363d73f609320da93d8332",
-                "reference": "53363bdb943089a759363d73f609320da93d8332",
+                "url": "https://api.github.com/repos/pantheion/engine/zipball/f7b4adef8ef8a62f994ac85f78e506c3fb19cbd8",
+                "reference": "f7b4adef8ef8a62f994ac85f78e506c3fb19cbd8",
                 "shasum": ""
             },
             "require": {
                 "hassankhan/config": "dev-master",
                 "pantheion/database": "dev-master",
+                "pantheion/logging": "dev-master",
                 "pantheion/routing": "dev-master",
                 "pantheion/session": "dev-master",
                 "vlucas/phpdotenv": "^5.1@dev"
@@ -1045,7 +1046,7 @@
                 }
             ],
             "description": "Engine base",
-            "time": "2020-10-27T11:55:54+00:00"
+            "time": "2020-10-30T12:59:26+00:00"
         },
         {
             "name": "pantheion/filesystem",
@@ -1076,6 +1077,36 @@
             ],
             "description": "Filesystem",
             "time": "2020-10-23T14:55:07+00:00"
+        },
+        {
+            "name": "pantheion/hashing",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pantheion/hashing.git",
+                "reference": "2b2a22bd29c9a8cf1fdc89d9ffcde8c710462b5c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pantheion/hashing/zipball/2b2a22bd29c9a8cf1fdc89d9ffcde8c710462b5c",
+                "reference": "2b2a22bd29c9a8cf1fdc89d9ffcde8c710462b5c",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Pantheion\\Hashing\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Pedro Miguel",
+                    "email": "pedro.aos19@gmail.com"
+                }
+            ],
+            "description": "Hash stuff",
+            "time": "2020-10-31T10:59:01+00:00"
         },
         {
             "name": "pantheion/helpers",
@@ -2217,7 +2248,8 @@
         "pantheion/middleware": 20,
         "pantheion/database": 20,
         "pantheion/session": 20,
-        "pantheion/logging": 20
+        "pantheion/logging": 20,
+        "pantheion/hashing": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
